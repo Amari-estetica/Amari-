@@ -1,109 +1,292 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AMARI Clínica Estética</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tu Estética | Belleza y Cuidado</title>
+    <meta name="description" content="Servicios de estética: uñas, pestañas, facial y más. Reserva tu cita." />
 
-<style>
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f8f5f1;
-    color:#444;
-    text-align:center;
-}
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-header{
-    padding:60px 20px;
-}
+  <body>
+    <!-- 🔝 Navegación -->
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#inicio">Tu Estética</a>
 
-h1{
-    font-size:42px;
-    margin-bottom:10px;
-    color:#6c8b6b;
-}
+        <nav class="nav">
+          <a href="#servicios">Servicios</a>
+          <a href="#precios">Precios</a>
+          <a href="#galeria">Galería</a>
+          <a href="#opiniones">Opiniones</a>
+          <a href="#contacto" class="btn btn--primary">Reservar</a>
+        </nav>
 
-p{
-    font-size:18px;
-    max-width:500px;
-    margin:auto;
-}
+        <button class="menu-btn" aria-label="Abrir menú" id="menuBtn">
+          ☰
+        </button>
+      </div>
 
-.boton{
-    display:block;
-    width:260px;
-    margin:20px auto;
-    padding:16px;
-    border-radius:50px;
-    background:#6c8b6b;
-    color:white;
-    text-decoration:none;
-    font-size:18px;
-    font-weight:bold;
-}
+      <div class="mobile-nav" id="mobileNav">
+        <a href="#servicios">Servicios</a>
+        <a href="#precios">Precios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#contacto" class="btn btn--primary">Reservar</a>
+      </div>
+    </header>
 
-.boton:hover{
-    background:#587358;
-}
+    <!-- 🏠 Hero -->
+    <main>
+      <section class="hero" id="inicio">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="pill">✨ Estética • Cuidado • Glam</p>
+            <h1>
+              Realza tu belleza con
+              <span class="highlight">amor y precisión</span>
+            </h1>
+            <p class="hero__text">
+              Uñas, pestañas y tratamientos faciales para que te sientas increíble todos los días.
+            </p>
 
-section{
-    padding:50px 20px;
-}
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contacto">Pedir turno 📲</a>
+              <a class="btn btn--ghost" href="#servicios">Ver servicios 💗</a>
+            </div>
 
-.tarjeta{
-    background:white;
-    max-width:500px;
-    margin:auto;
-    padding:25px;
-    border-radius:20px;
-    box-shadow:0 10px 20px rgba(0,0,0,.08);
-}
-</style>
+            <div class="hero__badges">
+              <div class="badge">⭐ 5★ reseñas</div>
+              <div class="badge">⏱️ Turnos rápidos</div>
+              <div class="badge">💎 Productos de calidad</div>
+            </div>
+          </div>
 
-</head>
+          <div class="hero__card" aria-label="Imagen de portada">
+            <div class="hero__cardInner">
+              <p class="hero__cardTitle">Tu estética</p>
+              <p class="hero__cardText">Coloca aquí tu foto o tu logo</p>
+              <div class="hero__cardPlaceholder">🖼️</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<body>
+      <!-- 💼 Servicios -->
+      <section class="section" id="servicios">
+        <div class="container">
+          <h2 class="section__title">Nuestros Servicios</h2>
+          <p class="section__subtitle">Elegí lo que más te gusta y reserva tu cita.</p>
 
-<header>
+          <div class="grid grid--3">
+            <article class="service">
+              <div class="service__icon">💅</div>
+              <h3>Uñas</h3>
+              <p>Manicura, acrílico, gel, diseños y cuidado.</p>
+            </article>
 
-<h1>AMARI</h1>
+            <article class="service">
+              <div class="service__icon">👁️</div>
+              <h3>Pestañas</h3>
+              <p>Extensiones, lifting y volumen profesional.</p>
+            </article>
 
-<h2>Clínica Estética</h2>
+            <article class="service">
+              <div class="service__icon">✨</div>
+              <h3>Faciales</h3>
+              <p>Hidratación, limpieza profunda y brillo natural.</p>
+            </article>
 
-<p>
-Realza tu belleza con tratamientos faciales y corporales personalizados.
-</p>
+            <article class="service">
+              <div class="service__icon">🧴</div>
+              <h3>Skincare</h3>
+              <p>Rutinas y recomendaciones según tu piel.</p>
+            </article>
 
-<a class="boton" href="https://wa.me/50660685810">Agendar por WhatsApp</a>
+            <article class="service">
+              <div class="service__icon">💆‍♀️</div>
+              <h3>Masajes</h3>
+              <p>Relajación y bienestar para tu cuerpo.</p>
+            </article>
 
-<a class="boton" href="https://instagram.com/TUUSUARIO">Instagram</a>
+            <article class="service">
+              <div class="service__icon">🌸</div>
+              <h3>Cejas y más</h3>
+              <p>Modelado, tintes y detalles que enmarcan.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-</header>
+      <!-- 💳 Precios -->
+      <section class="section section--soft" id="precios">
+        <div class="container">
+          <h2 class="section__title">Precios Orientativos</h2>
+          <p class="section__subtitle">Los valores pueden variar según técnica y tamaño. ¡Consulta!</p>
 
-<section>
+          <div class="grid grid--3">
+            <div class="price-card">
+              <h3>Uñas</h3>
+              <ul>
+                <li>Manicura desde <b>$—</b></li>
+                <li>Semipermanente desde <b>$—</b></li>
+                <li>Diseños + desde <b>$—</b></li>
+              </ul>
+              <a class="btn btn--ghost" href="#contacto">Consultar 📩</a>
+            </div>
 
-<div class="tarjeta">
+            <div class="price-card">
+              <h3>Pestañas</h3>
+              <ul>
+                <li>Extensiones desde <b>$—</b></li>
+                <li>Lifting desde <b>$—</b></li>
+                <li>Mantenimiento <b>$—</b></li>
+              </ul>
+              <a class="btn btn--ghost" href="#contacto">Consultar 📩</a>
+            </div>
 
-<h2>Nuestros Servicios</h2>
+            <div class="price-card">
+              <h3>Faciales</h3>
+              <ul>
+                <li>Limpieza desde <b>$—</b></li>
+                <li>Hidratación <b>$—</b></li>
+                <li>Rutina personalizada <b>$—</b></li>
+              </ul>
+              <a class="btn btn--ghost" href="#contacto">Consultar 📩</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<p>✨ Faciales</p>
+      <!-- 📷 Galería -->
+      <section class="section" id="galeria">
+        <div class="container">
+          <h2 class="section__title">Galería</h2>
+          <p class="section__subtitle">Reemplaza los placeholders por tus fotos.</p>
 
-<p>✨ Corporales</p>
+          <div class="grid grid--4">
+            <div class="photo">📷</div>
+            <div class="photo">📷</div>
+            <div class="photo">📷</div>
+            <div class="photo">📷</div>
+            <div class="photo">📷</div>
+            <div class="photo">📷</div>
+            <div class="photo">📷</div>
+            <div class="photo">📷</div>
+          </div>
+        </div>
+      </section>
 
-<p>✨ Drenaje Linfático</p>
+      <!-- 💬 Opiniones -->
+      <section class="section section--soft" id="opiniones">
+        <div class="container">
+          <h2 class="section__title">Opiniones</h2>
+          <p class="section__subtitle">Reseñas reales inspiran confianza 💗</p>
 
-<p>✨ Radiofrecuencia</p>
+          <div class="grid grid--3">
+            <div class="review">
+              <p class="review__stars">★★★★★</p>
+              <p class="review__text">“Quedé encantada con mis pestañas. Súper profesional.”</p>
+              <p class="review__name">— Ana</p>
+            </div>
+            <div class="review">
+              <p class="review__stars">★★★★★</p>
+              <p class="review__text">“Las uñas hermosas y con mucho cuidado. Volveré seguro.”</p>
+              <p class="review__name">— Sofi</p>
+            </div>
+            <div class="review">
+              <p class="review__stars">★★★★★</p>
+              <p class="review__text">“Me atendieron con paciencia y la piel quedó espectacular.”</p>
+              <p class="review__name">— Carla</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<p>✨ Dermaplaning</p>
+      <!-- 📞 Contacto -->
+      <section class="section" id="contacto">
+        <div class="container contact">
+          <div class="contact__copy">
+            <h2 class="section__title">Reservar / Contacto</h2>
+            <p class="section__subtitle">
+              Envíanos un mensaje y te respondemos lo antes posible.
+            </p>
 
-<p>✨ Lipolíticos</p>
+            <div class="contact__info">
+              <div class="info-item">📍 Dirección: (opcional)</div>
+              <div class="info-item">🕒 Horarios: (opcional)</div>
+              <div class="info-item">📲 WhatsApp: +XX XXX XXXX</div>
+            </div>
+          </div>
 
-<p>✨ Masajes Relajantes</p>
+          <form class="form" onsubmit="return false;">
+            <label>
+              Nombre
+              <input type="text" placeholder="Tu nombre" required />
+            </label>
 
-</div>
+            <label>
+              Teléfono / WhatsApp
+              <input type="tel" placeholder="+XX XXX XXXX" required />
+            </label>
 
-</section>
+            <label>
+              Servicio
+              <select required>
+                <option value="" selected disabled>Elegir...</option>
+                <option>Uñas</option>
+                <option>Pestañas</option>
+                <option>Faciales</option>
+                <option>Skincare</option>
+                <option>Masajes</option>
+                <option>Cejas y más</option>
+              </select>
+            </label>
 
-</body>
+            <label>
+              Mensaje
+              <textarea rows="4" placeholder="Ej: Quiero turno el viernes a la tarde..."></textarea>
+            </label>
+
+            <a class="btn btn--primary btn--full" href="https://wa.me/549XXXXXXXX">
+              Enviar por WhatsApp 📲
+            </a>
+
+            <p class="form__hint">Cambia el link de WhatsApp por el tuyo.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- 🔻 Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Tu Estética. Hecho con 💖</p>
+        <div class="footer__links">
+          <a href="#inicio">Arriba ⬆️</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Año actual
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Menú móvil
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileNav = document.getElementById("mobileNav");
+
+      if (menuBtn && mobileNav) {
+        menuBtn.addEventListener("click", () => {
+          mobileNav.classList.toggle("mobile-nav--open");
+        });
+
+        // Cerrar al hacer clic en un enlace
+        mobileNav.querySelectorAll("a").forEach((a) => {
+          a.addEventListener("click", () => mobileNav.classList.remove("mobile-nav--open"));
+        });
+      }
+    </script>
+  </body>
 </html>
